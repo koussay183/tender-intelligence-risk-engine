@@ -3,4 +3,5 @@
 *.mp4 binary
 *.webm binary
 *.wav binary
+*.jpg binary
 *.srt text eol=lf

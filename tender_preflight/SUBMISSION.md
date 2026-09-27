@@ -47,11 +47,13 @@ List any other models or generated assets you actually used. Never paste keys, p
 
 ## Three required public links
 
-1. **Source code URL:** publish the `tender_preflight` directory (including README, code, sample PDFs and requirements) in a public GitHub or GitLab repository. Add the PDF deck if desired. Test the URL signed out.
-2. **Presentation URL:** upload `output/pdf/tender_intelligence_pitch.pdf` to Google Drive or another host with viewer access. Test signed out.
-3. **90-second demo video URL:** upload the ready `output/video/tender_intelligence_demo.mp4` to YouTube as unlisted or to a viewable Drive link. Test signed out. `VIDEO_SCRIPT.md` is available if you want to record your own voice later.
+1. **Source code URL:** https://github.com/koussay183/tender-intelligence-risk-engine
+2. **Presentation URL:** https://koussay183.github.io/tender-intelligence-risk-engine/presentation.html
+3. **90-second demo video URL:** https://koussay183.github.io/tender-intelligence-risk-engine/demo.html
 
-The Google Form asks for URLs, not file uploads. Docker and a public deployment are optional. A localhost address is not accessible to the jury. If you deploy, add the live URL in the README and presentation; it does not replace the three required links.
+The Pages links show the PDF and MP4 in a browser and provide direct file links as a fallback. `VIDEO_SCRIPT.md` is available if you want to record your own voice later.
+
+The Google Form asks for URLs, not file uploads. Docker and a deployed app are optional. The GitHub Pages links host the presentation and video, not the live app; a localhost app address is not accessible to the jury.
 
 ## Final form checklist
 

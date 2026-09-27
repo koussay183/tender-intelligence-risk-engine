@@ -4,6 +4,12 @@
 
 The working app, sample data, tests and submission pack are in [`tender_preflight/`](tender_preflight/README.md). The eight-slide jury PDF is [`output/pdf/tender_intelligence_pitch.pdf`](output/pdf/tender_intelligence_pitch.pdf). The narrated 90-second demo is [`output/video/tender_intelligence_demo.mp4`](output/video/tender_intelligence_demo.mp4).
 
+## Jury links
+
+- [Watch the 90-second demo](https://koussay183.github.io/tender-intelligence-risk-engine/demo.html)
+- [View the presentation](https://koussay183.github.io/tender-intelligence-risk-engine/presentation.html)
+- [Browse the source code](https://github.com/koussay183/tender-intelligence-risk-engine)
+
 ## Quick start
 
 ```powershell

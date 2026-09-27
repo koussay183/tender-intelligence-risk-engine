@@ -14,9 +14,9 @@
 ## Still needed before opening the form
 
 - [ ] Confirm the **lead email** used in Final Team Confirmation: `________________________`.
-- [ ] Publish the actual source code in a public GitHub or GitLab repository. Source URL: `________________________`.
-- [ ] Upload the PDF presentation with view access. Presentation URL: `________________________`.
-- [ ] Upload the MP4 to unlisted YouTube or a viewable Drive link. Demo video URL: `________________________`.
+- [x] Publish the actual source code in a public GitHub repository. Source URL: https://github.com/koussay183/tender-intelligence-risk-engine
+- [x] Publish the PDF presentation on a viewable GitHub Pages page. Presentation URL: https://koussay183.github.io/tender-intelligence-risk-engine/presentation.html
+- [x] Publish the MP4 on a viewable GitHub Pages page. Demo video URL: https://koussay183.github.io/tender-intelligence-risk-engine/demo.html
 - [ ] Open all three URLs in a private/signed-out browser window. The source must be readable, the deck must open, and the video must play.
 
 ## Copy into the project form
@@ -54,7 +54,7 @@
 ## Final submit checks
 
 - [ ] The team name and lead email exactly match Final Team Confirmation.
-- [ ] The three link fields contain **public URLs**, not local file paths or `localhost`.
+- [x] The three link fields above contain **public URLs**, not local file paths or `localhost`.
 - [ ] The demo video is 90 seconds and shows the app working, including source evidence and the blocker changing from one to zero.
 - [ ] The repository README explains setup, model download, sample data, run steps, limits and AI/tool use. No passwords, API keys or vouchers are committed.
 - [ ] Select Guepard as primary. Select Artefact only if the current form offers it. The published SupplyzPro challenge is about AI-agent failure analysis, so this procurement prototype does not fit it.

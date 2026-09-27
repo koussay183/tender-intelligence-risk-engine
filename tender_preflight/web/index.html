@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tender Preflight | NovaTeam</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <div class="brand"><span class="brandmark">✳</span><span>TENDER<br><b>PREFLIGHT</b></span></div>
+      <div class="rail-label">WORKSPACE</div>
+      <nav><a href="#workspace" class="active">▣ &nbsp; Overview</a><a href="#review">◫ &nbsp; Risk map</a><a href="#simulator">◈ &nbsp; Bid simulator</a><a href="#room">▦ &nbsp; Submission room</a><a href="#strategy">✳ &nbsp; Bid strategy</a><a href="#ask">⌕ &nbsp; Ask the tender</a></nav>
+      <div class="rail-bottom"><span class="live-dot"></span> Local prototype<br><small>NovaTeam · Tunisia</small></div>
+    </aside>
+    <main id="workspace">
+      <header class="topbar"><span>CNRE 02/2026 <span class="chev">/</span> Document review</span><span class="topright">GUEPARD AI AUTOMATION AWARD <span class="avatar">N</span></span></header>
+      <section class="hero">
+        <div class="eyebrow"><span class="spark">✳</span> THE BID REVIEW WORKSPACE</div>
+        <h1>Turn a 57-page tender<br><em>into a clear bid plan.</em></h1>
+        <p>Map risks, test a fix, open the exact source, and prepare each submission dossier before you bid.</p>
+        <div class="hero-actions"><button id="loadDemo" class="button primary">Load sample bid <span>↗</span></button><a class="text-link" href="/sample/tender.pdf" target="_blank" rel="noopener">Read the official tender ↗</a></div>
+        <div class="hero-corner">01 / PREFLIGHT<br><strong>BEFORE YOU SUBMIT</strong></div>
+      </section>
+      <section class="workspace-head"><div><div class="section-kicker">01 / DOCUMENTS</div><h2>Start a review</h2><p>Use the fictional sample or add your own PDF files.</p></div><div id="modelBadge" class="model-badge">Checking local AI…</div></section>
+      <section class="uploads">
+        <label class="upload-card" for="tender"><span class="upload-no">01 · REQUIRED</span><span class="file-icon">▤</span><strong>Tender document</strong><span class="upload-help">The rules we compare against</span><span class="filename" id="tenderName">Choose a PDF <b>＋</b></span><input id="tender" type="file" accept="application/pdf"></label>
+        <label class="upload-card" for="proposal"><span class="upload-no">02 · REQUIRED</span><span class="file-icon">▥</span><strong>Your bid pack</strong><span class="upload-help">Technical and financial offer</span><span class="filename" id="proposalName">Choose a PDF <b>＋</b></span><input id="proposal" type="file" accept="application/pdf"></label>
+        <label class="upload-card" for="guarantee"><span class="upload-no">03 · OPTIONAL</span><span class="file-icon">▧</span><strong>Guarantee copy</strong><span class="upload-help">Check the digital copy fields</span><span class="filename" id="guaranteeName">Choose a PDF <b>＋</b></span><input id="guarantee" type="file" accept="application/pdf"></label>
+      </section>
+      <div class="runline"><label class="ai-toggle"><input type="checkbox" id="useAi" checked> Use local AI when available</label><div><button id="addGuarantee" class="button ghost" disabled>Add demo guarantee</button><button id="analyze" class="button dark">Run preflight <span>→</span></button></div></div>
+      <div id="error" class="error" role="alert" hidden></div>
+      <section id="review" class="review" hidden>
+        <div class="section-kicker">02 / INTELLIGENCE BOARD</div><div class="review-heading"><div><h2 id="decision">Review result</h2><p id="reviewSubtitle"></p></div><a id="reportLink" class="button report" target="_blank" rel="noopener">Export PDF report ↗</a></div>
+        <div class="stats"><div class="stat block"><span>BLOCKING</span><strong id="blockingCount">0</strong><small>Fix before submission</small></div><div class="stat warn"><span>HUMAN REVIEW</span><strong id="reviewCount">0</strong><small>Confirm with originals</small></div><div class="stat clear"><span>DETECTED</span><strong id="clearCount">0</strong><small>Found in your documents</small></div></div>
+        <div class="progress-wrap"><div><b>Preflight progress</b><span id="progressValue">0%</span></div><div class="progress-track"><span id="progressFill"></span></div><p>Clear check = 1 point; human review = half; blocker = 0. This is a checklist indicator, not an eligibility or win score.</p></div>
+        <div class="feature-head"><div><h3>Tender risk map</h3><p>Nine mapped risk and information signals from the official CNRE sample. Open any source to inspect its original page.</p></div><span>RISK ≠ PREDICTION</span></div><div id="riskMap" class="risk-map"></div>
+        <div class="review-grid"><div><div class="list-head"><h3>Requirement checks</h3><span>Click a source to open the tender page</span></div><div id="checks" class="checks"></div><div id="aiCandidates" class="ai-candidates" hidden></div></div><aside class="note-panel"><span class="note-icon">!</span><h3>The final call stays with you.</h3><p>The app cannot confirm physical delivery, bank authenticity, signatures, or the actual upload to TUNEPS.</p><div id="aiNotice" class="ai-notice"></div><div class="note-footer">SOURCE DOCUMENT<br><a id="sourceDocument" target="_blank" rel="noopener">Open tender PDF ↗</a></div></aside></div>
+      </section>
+      <section id="simulator" class="feature-section" hidden><div class="section-kicker">03 / BID SIMULATOR</div><div class="feature-head"><div><h2>What if you change the bid?</h2><p>Try a scenario. The original documents are never edited.</p></div><span>SCENARIO ONLY</span></div><div class="sim-grid"><div class="sim-controls"><label>Guarantee copy<select id="simGuarantee"><option value="current">As uploaded</option><option value="present">Add copy</option><option value="missing">Remove copy</option></select></label><label>Guarantee validity (days)<input id="simDays" type="number" min="0" max="365" placeholder="120"></label><label>Guarantee amount (TND)<input id="simAmount" type="number" min="0" placeholder="1000"></label><label>TTC total (TND)<input id="simTtc" type="number" min="0" placeholder="95200"></label><button id="runSimulation" class="button dark">Simulate change →</button><button id="resetSimulation" class="reset-button">Reset</button></div><div class="sim-outcome" id="simOutcome"><span class="small-caps">LIVE SCENARIO</span><h3>Change a field to see the effect.</h3><p>We will compare the proposed values against the mapped tender rules.</p></div></div></section>
+      <section id="room" class="feature-section alt" hidden><div class="section-kicker">04 / SUBMISSION ROOM</div><div class="feature-head"><div><h2>Four dossiers. One view.</h2><p>Place every bid component in the right review queue.</p></div><span>HUMAN SIGN-OFF REQUIRED</span></div><div id="rooms" class="rooms"></div><div class="package-line"><p>Page folders are suggestions. The ZIP keeps the untouched originals and a manifest for review.</p><a id="packageLink" class="button dark" download="tender_review_package.zip">Download review package ZIP ↓</a></div></section>
+      <section id="strategy" class="feature-section" hidden><div class="section-kicker">05 / BID STRATEGY</div><div class="feature-head"><div><h2>What the tender actually rewards.</h2><p>Published evaluation weights, turned into a practical proposal plan.</p></div><span>NO WIN PROBABILITY</span></div><div class="rubric"><div><b>30</b><span>Experience & references</span></div><div><b>20</b><span>Project approach</span></div><div><b>50</b><span>Proposed team</span></div></div><p class="rubric-note">The jury evaluates price first, then tests technical quality against a 70/100 threshold. Only the jury assigns actual points.</p><div id="strategyList" class="strategy-list"></div></section>
+      <section id="ask" class="ask"><div><div class="section-kicker">06 / SOURCE FINDER</div><h2>Ask the tender</h2><p>Search the mapped rules and open the page that supports the answer.</p></div><div class="ask-box"><div class="ask-controls"><input id="question" type="search" placeholder="Try: How much is the guarantee?" aria-label="Question about the tender"><button id="askButton" class="button dark">Find answer →</button></div><div id="answer" class="answer">Run a review to search the source-linked requirements.</div></div></section>
+      <footer>Built by NovaTeam · Koussay Jebali · Sousse Hackerspace, Tunisia <span>Prototype for the GOMYCODE NVIDIA Hackathon</span></footer>
+    </main>
+  </div>
+  <dialog id="evidenceDialog" class="evidence-dialog"><div class="evidence-header"><div><span class="section-kicker">EVIDENCE MODE · ORIGINAL PDF</span><h3 id="evidenceTitle">Source page</h3><p id="evidenceQuote"></p></div><button id="closeEvidence" aria-label="Close evidence">×</button></div><div class="evidence-scroll"><div id="pageFrame" class="page-frame"><img id="pageImage" alt="Original CNRE tender page"><span id="highlight" class="highlight"></span></div></div><div class="evidence-footer"><span>Highlighted text is a location cue. Read the full clause in context.</span><a id="pdfLink" target="_blank" rel="noopener">Open PDF page ↗</a></div></dialog>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:08,119
+A small company can lose a public tender because one document is missing. Meet Tender Intelligence, a review workspace built by NovaTeam.
+
+2
+00:00:08,400 --> 00:00:18,180
+Here is a real, fifty seven page Tunisian tender, paired with a fictional bidder. I load the sample, and the app maps requirements into risk and review signals.
+
+3
+00:00:19,000 --> 00:00:28,013
+The risk map reveals one automatic rejection risk: the one thousand dinar guarantee copy is missing. Every finding is linked to the published tender.
+
+4
+00:00:29,000 --> 00:00:37,723
+A local AI model explains the verified finding using the source clause and the detected bid fact. It does not decide compliance by itself.
+
+5
+00:00:39,000 --> 00:00:47,026
+Evidence mode opens the original page seven and highlights the guarantee rule. A reviewer can inspect the full text before acting.
+
+6
+00:00:49,000 --> 00:00:58,342
+Before changing files, I simulate a ninety day guarantee. The bid is still blocked. At one hundred and twenty days, that simulated field clears.
+
+7
+00:01:05,700 --> 00:01:15,391
+I add a clearly fictional guarantee copy and run the review again. The mapped blocker goes from one to zero. Physical delivery still needs human confirmation.
+
+8
+00:01:15,200 --> 00:01:24,027
+Four dossiers organize the bid files. The strategy view uses the tender's thirty, twenty, fifty scoring weights to focus the proposal.
+
+9
+00:01:24,100 --> 00:01:28,690
+The plan is ready. We export a review ZIP for human sign off.

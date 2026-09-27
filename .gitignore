@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+tmp/
+tmp-*.png
+.env
+node_modules/
+.venv/
+*.gguf
+output/video/audio/
+output/video/qa/
+output/video/page@*.webm
+output/video/tender_intelligence_raw.webm
+output/video/narration_90s.wav
+output/video/mux*
+tender_preflight/tests/*.png
+tender_preflight/video/

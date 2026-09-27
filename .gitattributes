@@ -1,0 +1,6 @@
+*.pdf binary
+*.png binary
+*.mp4 binary
+*.webm binary
+*.wav binary
+*.srt text eol=lf

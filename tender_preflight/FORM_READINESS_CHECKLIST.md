@@ -17,7 +17,7 @@
 - [x] Publish the actual source code in a public GitHub repository. Source URL: https://github.com/koussay183/tender-intelligence-risk-engine
 - [x] Publish the PDF presentation on a viewable GitHub Pages page. Presentation URL: https://koussay183.github.io/tender-intelligence-risk-engine/presentation.html
 - [x] Publish the MP4 on a viewable GitHub Pages page. Demo video URL: https://koussay183.github.io/tender-intelligence-risk-engine/demo.html
-- [ ] Open all three URLs in a private/signed-out browser window. The source must be readable, the deck must open, and the video must play.
+- [x] Open all three URLs without GitHub authentication. The repository, PDF and MP4 returned HTTP 200; the published Pages passed a signed-out browser test for the 90-second video, captions, presentation and mobile layout on 27 September 2026. Recheck the links once more before pressing Submit.
 
 ## Copy into the project form
 

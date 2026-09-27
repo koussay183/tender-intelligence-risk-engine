@@ -19,6 +19,7 @@ The prototype passed its tests on the bundled public CNRE 02/2026 tender and fic
 | Local AI | Qwen via llama.cpp explained one mapped blocker from the page 7 quote and detected bid fact; decision stayed deterministic | Pass |
 | PDF output | Eight-slide pitch and three-page sample report rendered and visually inspected | Pass |
 | Demo video | Real browser interactions recorded; final MP4 is exactly 90 seconds, 1280×720 H.264/AAC, opens in Chrome, has audible-range narration and visibly clears the blocker | Pass |
+| Public jury links | GitHub repository is PUBLIC; unauthenticated requests reached the source, PDF and MP4; published Pages passed desktop/mobile, video metadata, caption and PDF checks | Pass |
 
 Automated checks: **11 Python unit tests**, the browser journey in `tests/browser_check.cjs`, and the local-model browser journey in `tests/browser_ai_check.cjs`.
 

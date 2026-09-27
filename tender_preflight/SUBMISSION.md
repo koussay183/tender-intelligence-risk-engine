@@ -53,6 +53,8 @@ List any other models or generated assets you actually used. Never paste keys, p
 
 The Pages links show the PDF and MP4 in a browser and provide direct file links as a fallback. `VIDEO_SCRIPT.md` is available if you want to record your own voice later.
 
+The repository and both Pages links were checked without GitHub authentication on 27 September 2026. Recheck them shortly before submitting the form.
+
 The Google Form asks for URLs, not file uploads. Docker and a deployed app are optional. The GitHub Pages links host the presentation and video, not the live app; a localhost app address is not accessible to the jury.
 
 ## Final form checklist

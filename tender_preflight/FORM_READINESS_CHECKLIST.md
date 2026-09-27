@@ -26,7 +26,7 @@
 | Team name | NovaTeam |
 | Lead / only member | Koussay Jebali |
 | Lead email | Use the privately confirmed Final Team Confirmation email |
-| Team members — required field | Koussay Jebali (solo entrant) |
+| Team members — required field | Koussay Jebali |
 | Country | Tunisia |
 | Space | Sousse Hackerspace |
 | Team size | 1 (solo) |
